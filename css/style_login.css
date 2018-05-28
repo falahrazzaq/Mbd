@@ -15,10 +15,21 @@ html {
 }
 
 body {
+  padding-top: 54px;
   background: #ffffff;
   font-family: 'Helvetica';
-
 }
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.card {
+  height: 100%;
+}
+
 
 a {
   text-decoration: none;

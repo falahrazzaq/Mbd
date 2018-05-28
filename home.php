@@ -4,6 +4,8 @@
 		<title> Portopolio </title>
 		<link rel="stylesheet" href="style_profile.css" type="text/css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
 	</head>
 	<body>
 		<header>
@@ -17,33 +19,28 @@
 				</ul>
 			</nav>
 		</header>
-		<div class="gallery-name">
-			
-		</div>
-		<br>
-            
-            <div>
+		<div class="container">
+		    <div class="row text-center">
                 <?php
                   include("db.php");
                   $sql = "select * from koleksi";   
                   $query = mysqli_query($mysqli, $sql);
                   while($koleksi = mysqli_fetch_array($query)){
-                    echo '<div id="templatemo_content">';
-                    echo '<div id="templatemo">';
-                    echo '<div class="templatemo_product_box">';
-                    echo '<h1>'.$koleksi['kl_judul'].'<span>(by '.$koleksi['kl_penulis'].')</span></h1>';
-                    echo '<img src="images/templatemo_image_01.jpg" alt="image" />';
-                    echo '<div class="product_info">';
-                    echo '<p>Etiam luctus. Quisque facilisis suscipit elit. Curabitur...</p>';
-                    echo '<div class="buy_now_button"><a href="subpage.html">Booking now</a></div>';
-                    echo '<div class="detail_button"><a href="subpage.html">Detail</a></div>';
+                    echo '<div class="col-lg-3 col-md-6 mb-4">';
+                    echo '<div class="card">';
+                    echo '<img class="card-img-top" src="http://placehold.it/500x325" alt="">';
+                    echo '<div class="card-body">';
+                    echo '<h4 class="card-title">'.$koleksi['kl_judul'].'</h4>
+              <p class="card-text">'.$koleksi['kl_penulis'].'</p>
+            </div>';
+                    echo '<div class="card-footer">';
+                    echo '<a href="#" class="btn btn-primary">Find Out More!</a>';
                     echo '</div>';
-                    echo'<div class="cleaner">&nbsp;</div>';
+                    echo '</div>';
                     echo '</div>';
                   }
                 ?>
-            </div>
-
+        	</div>
         </div> 
 	</body>
 </html>

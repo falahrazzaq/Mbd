@@ -5,9 +5,10 @@ session_start();
 <!doctype html>
 <html>
 	<head>
-		<title> Portopolio </title>
-		<link rel="stylesheet" href="style_profile.css" type="text/css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title> Karyawan </title>
+    <link rel="stylesheet" href="style_profile.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	</head>
 	<body>
 		<header>
