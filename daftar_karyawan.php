@@ -9,7 +9,7 @@
         <div id="signup">   
           <h1>Daftar Pelanggan</h1>
           
-          <form action="daftar_p.php" method="post" autocomplete="off">
+          <form action="daftar_k.php" method="post" autocomplete="off">
           
           <div class="top-row">
             <div class="field-wrap">
@@ -22,12 +22,9 @@
           </div>
           
           <div class="field-wrap">
-            <input placeholder="alamat" type="text"required autocomplete="off" name='alamat'/>
+            <input placeholder="alamat" type="text"required autocomplete="off" name='alamat' />
           </div>
 
-          <div class="field-wrap">
-            <input id="date" type="date"required autocomplete="off" name='date'/>
-          </div>
           <button type="submit" class="button button-block" name="Daftar" />Tambah</button>
           </form>
         </div>  

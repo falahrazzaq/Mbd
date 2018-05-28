@@ -19,6 +19,9 @@
 				</ul>
 			</nav>
 		</header>
+		<div id="tambah">
+        	<li><a href="donasi.php">Donasi</a></li>
+    	</div>
 		<div class="container">
 		    <div class="row text-center">
                 <?php

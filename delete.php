@@ -1,14 +1,15 @@
 <?php
   include('db.php');
-  print $_GET('id_anggota');
+  $id = $_GET['id_anggota'];
   echo "$id";
 
-  $sql = "DELETE FROM anggota WHERE id='$id'";
+  $sql = "DELETE FROM anggota WHERE id_anggota ='$id'";
 
-  if ($conn->query($sql) === TRUE) {
+  if ($mysqli->query($sql) === TRUE) {
       echo "Record deleted successfully";
-      header ('pelanggan.php');
+      header("location: pelanggan.php");
   } else {
-      echo "Error deleting record: " . $conn->error;
+      echo "Error deleting record: " . $mysqli->error;
   }
+
  ?>

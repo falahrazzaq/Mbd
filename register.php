@@ -42,7 +42,6 @@ else {
         mail( $to, $subject, $message_body );
 
         header("location: profile.php"); 
-
     }
 
     else {
