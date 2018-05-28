@@ -60,6 +60,13 @@ a:hover {
   display: table;
   clear: both;
 }
+
+.tambah {
+  padding-right: 400px;
+  font-family: 'Helvetica';
+  float: left;
+}
+
 .tab-group li a {
   display: block;
   text-decoration: none;

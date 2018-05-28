@@ -15,16 +15,18 @@ session_start();
 			<h1><a href="home.php" class="header-name">Booking & Donate</a></h1>
 			<nav>
 				<ul>
-					<li><a href="home.php">Koleksi</a></li>
-                    <li class="active"><a href="pelanggan.php">Pelanggan</a></li>
-                    <li><a href="karyawan.php">Karyawan</a></li>
-                    <li><a href="logout.php">Logout</a></li>
+					  <li><a href="home.php">Koleksi</a></li>
+            <li class="active"><a href="pelanggan.php">Pelanggan</a></li>
+            <li><a href="karyawan.php">Karyawan</a></li>
+            <li><a href="logout.php">Logout</a></li>
 				</ul>
 			</nav>
 		</header>
 		<br>
 		<!--Table-->
+    <div id="tambah">
         <li><a href="daftar_pelanggan.php">tambah pelanggan</a></li>
+    </div>
     <div id="content">
                 <table class="table table-bordered">
                     <thead>

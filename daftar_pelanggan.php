@@ -1,3 +1,7 @@
+<?php
+require 'daftar.php';
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,30 +17,25 @@
           
           <div class="top-row">
             <div class="field-wrap">
-              <input placeholder="First Name" type="text" required autocomplete="off" name='firstname' />
+              <input placeholder="Nama" type="text" required autocomplete="off" name='firstname' />
             </div>
         
             <div class="field-wrap">
-              <input placeholder="Last Name" type="text"required autocomplete="off" name='lastname' />
+              <input placeholder="nomor telphone" type="tel"required autocomplete="off" name='no_telp' />
             </div>
           </div>
+          
+          <div class="field-wrap">
+            <input placeholder="alamat" type="text"required autocomplete="off" name='alamat'/>
+          </div>
 
           <div class="field-wrap">
-            <input placeholder="Email Address" type="email"required autocomplete="off" name='email' />
+            <input id="date" type="date"required autocomplete="off" name='date'/>
           </div>
-          
-          <div class="field-wrap">
-            <input placeholder="Password" type="password"required autocomplete="off" name='password'/>
-          </div>
-          
           <button type="submit" class="button button-block" name="Daftar" />Tambah</button>
-          
           </form>
-
         </div>  
-        
       </div>
-      
 </div>
 <script src="js/index.js"></script>
 </body>
