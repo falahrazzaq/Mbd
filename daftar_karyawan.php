@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Daftar Pelanggan</title>
+  <title>Daftar Karyawan</title>
   <link rel="stylesheet" href="css/style_login.css" type="text/css">
 </head>
 <body>
   <div class="form">
         <div id="signup">   
-          <h1>Daftar Pelanggan</h1>
+          <h1>Daftar Karyawan</h1>
           
           <form action="daftar_k.php" method="post" autocomplete="off">
           
           <div class="top-row">
             <div class="field-wrap">
-              <input placeholder="Nama" type="text" required autocomplete="off" name='firstname' />
+              <input placeholder="Nama" type="text" required autocomplete="off" name='name' />
             </div>
         
             <div class="field-wrap">
@@ -22,9 +22,8 @@
           </div>
           
           <div class="field-wrap">
-            <input placeholder="alamat" type="text"required autocomplete="off" name='alamat' />
-          </div>
-
+            <input placeholder="alamat" type="text"required autocomplete="off" name='alamat'/>
+          </div> 
           <button type="submit" class="button button-block" name="Daftar" />Tambah</button>
           </form>
         </div>  

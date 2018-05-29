@@ -46,7 +46,7 @@
                         echo "<td>".$karyawan['k_alamat']."</td>";
                         echo "<td>".$karyawan['k_telp']."</td>";
                       ?>
-                      <td><a href="delete.php?id_anggota=<?php echo $anggota['id_anggota'];?>">Delete</a></td>
+                      <td><a href="delete_k.php?id_karyawan=<?php echo $karyawan['id_karyawan'];?>">Delete</a></td>
                       <?php
                         echo "</tr>";
                       }

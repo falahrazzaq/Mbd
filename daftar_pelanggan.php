@@ -26,6 +26,7 @@
           </div>
 
           <div class="field-wrap">
+            Tanggal Daftar
             <input id="date" type="date"required autocomplete="off" name='date'/>
           </div>
           <button type="submit" class="button button-block" name="Daftar" />Tambah</button>
